@@ -1,0 +1,96 @@
+.profile {
+    width: 100%;
+    height: 100%;
+    padding: 32px;
+    background-color: var(--bg-dark-950);
+    color: var(--text-primary);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.profile .container {
+    width: 100%;
+    max-width: 600px;
+    background: var(--bg-glass-card);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--border-glass);
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.profile .container .info {
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border-glass);
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.profile .container .info img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+    padding: 4px;
+    background: rgba(255, 255, 255, 0.02);
+    filter: invert(1); /* Invert generic black user image to white */
+}
+
+.profile .container .info .info-data {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.profile .container .info .info-data label {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--text-primary);
+}
+
+.profile .container .info .info-data span {
+    font-size: 13px;
+    color: var(--primary-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.profile .container .details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.profile .container .details .grid {
+    display: grid;
+    grid-template-columns: 180px auto;
+    padding: 14px 16px;
+    background: rgba(255, 255, 255, 0.01);
+    border: 1px solid var(--border-glass);
+    border-radius: 12px;
+    transition: all 0.2s;
+}
+
+.profile .container .details .grid:hover {
+    border-color: rgba(99, 102, 241, 0.25);
+    background: rgba(99, 102, 241, 0.02);
+}
+
+.profile .container .details .grid span:first-child {
+    font-weight: 600;
+    color: var(--text-secondary);
+    font-size: 13.5px;
+}
+
+.profile .container .details .grid span:last-child {
+    color: var(--text-primary);
+    font-weight: 500;
+}
